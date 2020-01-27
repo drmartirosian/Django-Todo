@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MY-APP-NAME</title>
+</head>
+<body>
+
+<header class="navbar-fixed">
+    <nav>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/todos">TODOS LIST</a></li>
+        <li><a href="/todos/create">NEW TODO</a></li>
+    </nav>
+</header>
+
+<hr>
+
+<main class="container">
+    {% block content %}
+    {% endblock %}
+</main>
+
+<hr>
+
+<footer class="page-footer">
+    <div class="right">All Rights Reserved, &copy; 2019 MyApp, Inc. &nbsp;</div>
+</footer>
+
+</body>
+</html>

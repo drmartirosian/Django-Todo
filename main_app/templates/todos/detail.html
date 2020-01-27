@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>TODO {{todo.name}}</h1>
+    <hr>
+    <p>DESCRIOTION: {{todo.description}}</p>
+    <p>NUMBER: {{todo.number}}</p>
+    <a href="/todos/{{ todo.id }}/update">UPDATE</a>
+    <a href="/todos/{{ todo.id }}/delete">DELETE</a>
+{% endblock %}

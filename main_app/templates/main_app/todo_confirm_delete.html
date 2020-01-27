@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h4>Delete todo?</h4>
+
+  <form action="" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="Delete" class="btn">
+    <a href="{% url 'todos' %}">Cancel</a>
+  </form>
+{% endblock %}
